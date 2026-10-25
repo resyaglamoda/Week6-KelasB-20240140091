@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etalase — Kopi & Ruang</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- Navigasi Utama -->
+    <nav>
+        <a href="index.html" aria-current="page">Etalase</a>
+        <a href="form.html">Caption</a>
+    </nav>
+
+    <!-- Header / Judul Toko -->
+    <header>
+        <div class="eyebrow">Rak No. 01 — Menu Digital</div>
+        <h1>Kopi &amp; Ruang</h1>
+        <p>katalog menu harian &middot; diseduh langsung dari dapur kami</p>
+    </header>
+
+    <!-- Area Pencarian & Filter -->
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="cari menu...">
+        <select id="categorySelect">
+            <option value="">Semua Kategori</option>
+            <!-- Opsi kategori akan diisi otomatis oleh JavaScript -->
+        </select>
+    </div>
+
+    <!-- Area Konten Utama -->
+    <main>
+        <!-- Pesan Loading/Error -->
+        <div id="status">Memuat menu...</div>
+        
+        <!-- Wadah untuk Kartu Produk -->
+        <div class="grid" id="productGrid"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        sumber data: DummyJSON &middot; dibuat dengan HTML + JS native
+    </footer>
+
+    <!-- Panggil JavaScript -->
+    <script src="js/index.js"></script>
+</body>
+</html>

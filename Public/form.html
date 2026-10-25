@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caption — Generator Promosi</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Etalase</a>
+        <a href="form.html" aria-current="page">Caption</a>
+    </nav>
+
+    <header>
+        <div class="eyebrow">Meja Kasir — Media Sosial</div>
+        <h1>Caption</h1>
+        <p>isi nama menu &amp; harga, pilih template, caption siap posting</p>
+    </header>
+
+    <main>
+        <form id="form" novalidate>
+            <label for="nama">Nama Menu</label>
+            <input type="text" id="nama" placeholder="contoh: Es Kopi Susu Senja" aria-describedby="nama-error">
+            <small class="error" id="nama-error" aria-live="polite"></small>
+
+            <label for="harga">Harga (Rp)</label>
+            <input type="number" id="harga" placeholder="contoh: 22000" aria-describedby="harga-error">
+            <small class="error" id="harga-error" aria-live="polite"></small>
+
+            <label for="template">Template Caption</label>
+            <select id="template">
+                <option value="promo">Promo (Diskon Spesial)</option>
+                <option value="santai">Santai (Gaya Bestie)</option>
+                <option value="formal">Formal (Menu Premium)</option>
+            </select>
+
+            <button type="submit">Buat Caption</button>
+
+            <label for="caption">Hasil Caption</label>
+            <textarea id="caption" rows="14" readonly placeholder="Caption akan muncul di sini..."></textarea>
+        </form>
+    </main>
+
+    <footer>
+        caption generator &middot; dibuat dengan HTML + JS native
+    </footer>
+
+    <script src="js/form.js"></script>
+</body>
+</html>
